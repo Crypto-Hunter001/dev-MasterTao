@@ -9,23 +9,3 @@ header {
 	}
 }
 
-.navbar-custom {
-	padding: 9px 0 39px !important;
-}
-
-.navbar-custom {
-	.nav-item {
-		.nav-link {
-			padding: 8px 25px !important;
-			&:hover {
-				text-decoration: none;
-				color: $primary-color  !important;
-			}
-		}
-	}
-}
-
-
-.navbar-brand {
-	 margin: 0 !important;
-}
