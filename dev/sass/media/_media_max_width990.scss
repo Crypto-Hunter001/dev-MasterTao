@@ -1,13 +1,9 @@
 @media screen and (max-width: 990.99px) {
-
-
-
   .container {
     padding: 0 20px !important;
   }
 
   .navbar-brand {
-
     img {
       max-width: 126px;
     }
@@ -23,11 +19,8 @@
       }
     }
 
-
-
     .navbar-nav {
       padding: 33px 0 25px !important;
-
     }
 
     .navbar-collapse {
@@ -35,7 +28,7 @@
       background: $bg-section !important;
       margin: 0 -20px !important;
       transform: translate(0, 20px) !important;
-      box-shadow: 14px 22px 40PX #1e234266 !important;
+      box-shadow: 14px 22px 40px #1e234266 !important;
       .btn-primary {
         margin-bottom: 60px !important;
         font-size: 16px !important;
@@ -43,24 +36,50 @@
         max-width: 295px !important;
         width: 100% !important;
       }
-
     }
 
     .navbar-collapse:not(.show) {
       display: none !important;
     }
+  }
 
+  .banner {
+    .swiper {
+
+      .container {
+      align-items: center !important;
+      text-align: center !important;
+      min-height: 649px !important;
+      position: relative;
 
 
     }
+    }
 
 
+    &-title {
+      font-size: 32px !important;
+      margin-bottom: 10px !important;
+      max-width: 295px;
+    }
 
+    &-description {
+       font-size: 16px !important;
+      margin-bottom: 18px !important;
+      max-width: 260px;
+    }
 
-
-
-
-
-
+    .swiper-slide {
+         &::before {
+        content: "";
+        background-color: #04091199;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 
 }

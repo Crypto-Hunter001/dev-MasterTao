@@ -1,3 +1,28 @@
-let name = "123";
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
 
-console.log(name);
+  // Navigation arrows
+  navigation: {
+    enabled: false,
+  },
+
+  breakpoints:{
+    992: {
+      navigation: {
+        enabled: true,
+       nextEl: '.swiper-button-next',
+       prevEl: '.swiper-button-prev',
+      },
+    },
+  }
+
+
+
+
+});

@@ -1,0 +1,91 @@
+.banner {
+  background: $bg-body;
+
+  .swiper {
+    .container {
+      min-height: 700px !important;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 0px 0px 50px !important;
+    }
+  }
+  &-title {
+    color: #fff;
+    font-size: 56px;
+    font-weight: 700;
+    max-width: 463px;
+    margin-bottom: 8px;
+    line-height: 126%;
+    text-transform: uppercase;
+  }
+  &-description {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 135%;
+    max-width: 325px;
+    margin-bottom: 37px;
+  }
+  .container-xxl {
+    max-width: 1820px !important;
+    width: 100% !important;
+    color: #fff;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    opacity: 1;
+
+    &-active {
+      background-color: #fff !important;
+    }
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 13px;
+  }
+
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    line-height: 0;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 43px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    max-width: 1595px;
+    padding: 0 50px;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 30px);
+    height: 0;
+    justify-content: flex-start;
+    color: #fff;
+
+    &:hover {
+      color: $color-swiper;
+      transition: .3s;
+    }
+
+  }
+
+   .swiper-button-next {
+    justify-content: flex-end;
+
+  }
+
+  .swiper-slide {
+    background-position: center !important ;
+  }
+
+
+
+
+}

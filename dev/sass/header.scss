@@ -1,19 +1,20 @@
 header{
-	height: 114px ;
-	padding: 15px 0;
-	background: $bg-body;
+	height: 114px !important;
+	padding: 15px 12px !important ;
+	background: $bg-body !important;
 	a {
-		color: #fff;
+		color: #fff !important;
 	}
+
+
 }
 
 .container {
   max-width: 1140px !important;
+
 }
 
-.navbar-custom {
-  padding: 3px 0 20px !important;
-}
+
 .navbar-toggler {
   border: none !important;
   border-radius: 0 !important;
@@ -52,29 +53,21 @@ header{
     }
    }
 }
-.navbar-custom {
-.nav-item {
-  .nav-link {
-    padding: 12px 16px !important;
-    &:hover {
-      text-decoration: none;
-      color: $primary-color  !important;
-    }
-  }
-}
+
 .navbar-nav {
   margin-top: 3px !important;
 }
-}
+
 
 
 .navbar-custom {
-	padding: 9px 0 39px !important;
+	 padding: 5px 0px 6px !important;
+
 }
 .navbar-custom {
 	.nav-item {
 		.nav-link {
-			padding: 8px 25px !important;
+			   padding: 11px 21px !important;
 			&:hover {
 				text-decoration: none;
 				color: $primary-color  !important;
