@@ -2,6 +2,7 @@ header{
 	height: 114px !important;
 	padding: 15px 12px !important ;
 	background: $bg-body !important;
+  font-family: "ProximaNova";
 	a {
 		color: #fff !important;
 	}
@@ -67,7 +68,7 @@ header{
 .navbar-custom {
 	.nav-item {
 		.nav-link {
-			   padding: 11px 21px !important;
+			   padding: 12px 21px !important;
 			&:hover {
 				text-decoration: none;
 				color: $primary-color  !important;

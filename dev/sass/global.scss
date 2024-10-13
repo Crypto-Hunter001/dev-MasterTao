@@ -5,6 +5,9 @@
   box-sizing: border-box;
 }
 
+section {
+	background: $bg-body;
+}
 
 body {
 
@@ -118,11 +121,7 @@ ul {
     width: 27px;
   }
 
-  &.btn-lg {
-    padding: 19px 24px !important;
-    font-size: 16px !important;
 
-  }
 }
 
 .template-title {
@@ -154,32 +153,26 @@ ul {
     font-size: 24px;
   }
 
-  &.case-2 {
-    text-align: left !important;
 
-    &::before {
-      left: 0 ;
-      transform: none;
-    }
-  }
 
-  &.case-3 {
-    max-width: 626px;
-    text-align: left;
 
-    &::before {
-      display: none;
-    }
-
-    h2 {
-      &::after {
-        content: "";
-        width: 85px;
-        height: 2px;
-        display: inline-block;
-        background-color: $secondary-color;
-        margin: 0 12px 10px;
-      }
-    }
-  }
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+section {
+  padding: $section-padding;
+}
+
+.form-row {
+  gap: 28px !important;
+}
+

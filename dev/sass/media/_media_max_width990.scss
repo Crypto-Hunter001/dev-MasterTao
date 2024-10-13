@@ -82,4 +82,65 @@
     }
   }
 
+  section {
+    padding: $section-padding-mobile;
+  }
+
+  .calculation-img {
+    display: none;
+  }
+
+  .calculation-form {
+    margin: 0 auto;
+    padding: 52px 30px 34px !important;
+
+    .form-row {
+      flex-direction: column;
+      gap: 0 !important;
+    }
+
+    .control-box:first-child {
+      margin-top: 6px;
+    }
+
+    .control-box:last-child {
+      margin-bottom: 18px !important;
+    }
+
+    input {
+      &[type=file] {
+        + label {
+          margin-top: 32px !important;
+        }
+      }
+    }
+
+    .btn-lg {
+      width: 100%;
+      img {
+        margin-left: 74px;
+      }
+    }
+
+  }
+
+  .template-title {
+    h2 {
+      font-size: 24px !important;
+    }
+
+    h4 {
+      font-size: 16px !important;
+    }
+
+    &::before {
+      bottom: 28px;
+
+    }
+
+
+
+  }
+
+
 }
