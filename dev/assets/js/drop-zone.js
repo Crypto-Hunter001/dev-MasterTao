@@ -1,9 +1,9 @@
 if (document.querySelector('#drop-zone')) {
     const dropZone = document.getElementById("drop-zone");
     const fileInput = document.getElementById('file-input')
-   
+
     function handleDrop(e) {
-        e.preventDefault();
+		e.preventDefault();
         dropZone.classList.remove("hover");
 
         const files = e.dataTransfer.files;
@@ -12,6 +12,8 @@ if (document.querySelector('#drop-zone')) {
             updateThumbnail(files[0]);
         }
     }
+
+
 
     function handleDragOver(e) {
         e.preventDefault();
