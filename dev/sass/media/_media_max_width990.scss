@@ -44,6 +44,7 @@
   }
 
   .banner {
+    padding-bottom: 0;
     .swiper {
 
       .container {
@@ -152,6 +153,27 @@
 
 
   }
+
+  .calculation {
+    padding: 54px 0 60px !important;
+    .calculation-row {
+      padding-top: 21px;
+    }
+  }
+
+  .advantages {
+    .swiper {
+      padding-top: 16px;
+      overflow: none;
+
+      .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+      bottom: -8px;
+      }
+    }
+  }
+
+
+
 
 
 }

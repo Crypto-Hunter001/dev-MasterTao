@@ -1,7 +1,6 @@
 const swiper = new Swiper('#banner-swiper', {
   // Optional parameters
   loop: true,
-  autoplay: true,
   speed: 500,
   // If we need pagination
   pagination: {
@@ -37,7 +36,7 @@ typeFile.forEach(item => {
     })
 })
 
-const andvantagesSlideLength = document.querySelectorAll('.advantages .swiper-slide').length
+const andvantageSlide = document.querySelectorAll('.advantages .swiper-slide').length
 
 const swiperAdvantages = new Swiper('#advantages', {
 	// Optional parameters
@@ -55,7 +54,7 @@ const swiperAdvantages = new Swiper('#advantages', {
 		1025: {
 			spaceBetween: 0,
 			loop: false,
-			slidesPerGroup: 8,
+			slidesPerGroup: andvantageSlide,
 			simulateTouch: false,
 			pagination: {
 				el: '.swiper-pagination',

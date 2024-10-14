@@ -200,10 +200,10 @@ section {
 	width: 8px;
 	height: 8px;
 	border: 2px solid #ffff;
-	background-color: transparent;
+	background-color: transparent !important;
 	opacity: 1;
 
-	&-active {
+	&:active {
 		background-color: #fff !important;
 	}
 }
