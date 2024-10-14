@@ -37,6 +37,8 @@ typeFile.forEach(item => {
     })
 })
 
+const andvantagesSlideLength = document.querySelectorAll('.advantages .swiper-slide').length
+
 const swiperAdvantages = new Swiper('#advantages', {
 	// Optional parameters
 	loop: true,
@@ -62,5 +64,7 @@ const swiperAdvantages = new Swiper('#advantages', {
 
 		},
 	}
+
+
 
 });
