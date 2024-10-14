@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('#banner-swiper', {
   // Optional parameters
   loop: true,
   autoplay: true,
@@ -26,6 +26,8 @@ const swiper = new Swiper('.swiper', {
 
 });
 
+
+
 const typeFile = document.querySelectorAll('.custom-file')
 
 typeFile.forEach(item => {
@@ -34,3 +36,31 @@ typeFile.forEach(item => {
         fileName.innerHTML = item.files[0].name;
     })
 })
+
+const swiperAdvantages = new Swiper('#advantages', {
+	// Optional parameters
+	loop: true,
+	simulateTouch: true,
+	slidesPerView: 1,
+	// If we need pagination
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+		enabled: true,
+	},
+
+	breakpoints: {
+		1025: {
+			spaceBetween: 0,
+			loop: false,
+			slidesPerGroup: 8,
+			simulateTouch: false,
+			pagination: {
+				el: '.swiper-pagination',
+				enabled: false,
+			},
+
+		},
+	}
+
+});

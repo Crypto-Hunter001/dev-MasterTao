@@ -45,6 +45,24 @@
   }
   }
 
+	#advantages {
+		padding-top: 17px;
+		margin: 0 -12px;
+		width: calc(100% + 28px);
+		.swiper-wrapper {
+			flex-wrap: wrap !important;
+			height: auto !important;
+			width: calc(100% + 24px) ;
+		}
 
+		.advantage {
+			width: 100%;
+			max-width: 25%;
+			padding: 0 22px;
+		}
+	}
 
 }
+
+
+
