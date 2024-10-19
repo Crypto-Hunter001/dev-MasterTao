@@ -102,7 +102,7 @@ const swiperSlideTemplate = new Swiper('.swiper-template', {
 
 		767: {
 			navigation: {
-				enabled: false,
+				enabled: true,
 				nextEl: '.swiper-button-next-unique',
 				prevEl: '.swiper-button-prev-unique',
 
