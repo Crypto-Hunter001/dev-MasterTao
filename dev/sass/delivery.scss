@@ -1,0 +1,155 @@
+.delivery {
+
+	position: relative;
+	.swiper-slide {
+
+		.card {
+			background-color: $bg-section;
+			border: none;
+			color: #fff;
+			border-radius: 20px;
+			padding: 0 20px 27px;
+			overflow: hidden;
+			min-height: 482px;
+			max-width: 360px;
+
+
+
+			.card-title {
+				font-size: 22px;
+				font-weight: 600;
+				text-align: center;
+			}
+
+			.card-option {
+				display: flex;
+				padding: 0;
+				margin: 0;
+				gap: 28px;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 15px;
+
+				.option-item {
+					img {
+						margin-right: 15px;
+					}
+
+				}
+
+			}
+
+			.card-price {
+				font-size: 22px;
+				line-height: 125%;
+				text-align: center;
+				color: #a3a3a3;
+				margin-bottom: 18px;
+
+				b {
+					font-weight: 700;
+					font-size: 45px;
+					color: #fff;
+				}
+
+				span {
+					&:last-child {
+						color: #fff;
+					}
+				}
+
+
+
+			}
+
+
+
+			.img-box {
+				margin: 0 -20px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 27px;
+
+				img {
+					object-fit: contain;
+					height: 229px;
+				}
+
+				.img-fluid {
+					max-width: 100%;
+					height: auto;
+				}
+
+
+			}
+
+			.btn-row {
+				display: flex;
+				gap: 14px;
+
+
+				.btn {
+					width: 153px;
+					padding: 13px 10px !important;
+				}
+
+			}
+
+		}
+
+	}
+
+
+}
+
+.swiper-template {
+	.swiper-pagination {
+		bottom: 10px !important;
+	}
+}
+
+.swiper-button-prev-unique {
+	@extend .swiper-button-prev;
+}
+
+.swiper-button-prev-unique,
+.swiper-button-next-unique {
+	height: 25px;
+	width: 46px;
+	color: #ffff !important;
+
+
+		&:hover {
+			color: $secondary-color !important;
+		}
+
+		&.swiper-button-prev-unique {
+			left: 0;
+		}
+
+		&.swiper-button-next-unique {
+			right: 0;
+		}
+
+
+
+}
+
+
+
+.swiper-navigation {
+	position: absolute;
+	bottom: 311px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	max-width: 1323px;
+	width: 100%;
+	background-color: yellow;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+
+

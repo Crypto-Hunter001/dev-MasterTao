@@ -5,12 +5,15 @@
 	box-sizing: border-box;
 }
 
-
+ul {
+	list-style-type: none;
+}
 
 
 section {
 	background: $bg-body;
 	font-family: "ProximaNova";
+	color: #fff;
 }
 
 body {
