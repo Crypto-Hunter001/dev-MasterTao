@@ -1,43 +1,45 @@
 .services {
 
 	position: relative;
+
 	.swiper-slide {
 
 		.card {
+			display: flex;
+			justify-content: flex-end;
+			flex-direction: column;
 			background-color: $bg-section;
 			border: none;
 			color: #fff;
 			border-radius: 20px;
 			padding: 0 20px 27px;
 			overflow: hidden;
-			min-height: 482px;
+			min-height: 472px;
 			max-width: 360px;
+			width: 100%;
+			z-index: 1;
+			position: relative;
 
 
 
 			.card-title {
+				text-align: left !important;
 				font-size: 22px;
 				font-weight: 600;
 				text-align: center;
+				margin-bottom: 13px;
+				z-index: 1;
 			}
 
-			.card-option {
-				display: flex;
-				padding: 0;
-				margin: 0;
-				gap: 28px;
-				justify-content: center;
-				align-items: center;
-				margin-bottom: 15px;
-
-				.option-item {
-					img {
-						margin-right: 15px;
-					}
-
-				}
-
+			.card-description {
+				margin-bottom: 14px;
+				font-weight: 400;
+				line-height: 124%;
+				font-size: 15px;
+				z-index: 1;
 			}
+
+
 
 			.card-price {
 				font-size: 22px;
@@ -70,10 +72,18 @@
 				align-items: center;
 				justify-content: center;
 				margin-bottom: 27px;
+				width: 100%;
+				height: 100%;
+				z-index: 0;
 
 				img {
 					object-fit: contain;
 					height: 229px;
+					position: absolute;
+					inset: 0;
+					height: initial;
+					z-index: 1;
+
 				}
 
 				.img-fluid {
@@ -87,6 +97,8 @@
 			.btn-row {
 				display: flex;
 				gap: 14px;
+				margin-top: initial;
+				z-index: 1;
 
 
 				.btn {
@@ -94,6 +106,14 @@
 					padding: 13px 10px !important;
 				}
 
+			}
+
+			&::before {
+				content: "";
+				position: absolute;
+				inset: 0;
+				background: linear-gradient(0deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0) 100%);
+				z-index: 1;
 			}
 
 		}
@@ -115,22 +135,22 @@
 
 [class*=swiper-button-prev-unique],
 [class*=swiper-button-next-unique] {
-		height: 25px;
-		width: 46px;
-		color: #ffff !important;
+	height: 25px;
+	width: 46px;
+	color: #ffff !important;
 
 
-		&:hover {
-			color: $secondary-color !important;
-		}
+	&:hover {
+		color: $secondary-color !important;
+	}
 
-		&.swiper-button-prev-unique {
-			left: 0;
-		}
+	&.swiper-button-prev-unique {
+		left: 0;
+	}
 
-		&.swiper-button-next-unique {
-			right: 0;
-		}
+	&.swiper-button-next-unique {
+		right: 0;
+	}
 
 }
 
@@ -151,6 +171,3 @@
 	justify-content: space-between;
 
 }
-
-
-

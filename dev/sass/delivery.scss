@@ -1,6 +1,7 @@
 .delivery {
 
 	position: relative;
+
 	.swiper-slide {
 
 		.card {
@@ -12,6 +13,7 @@
 			overflow: hidden;
 			min-height: 482px;
 			max-width: 360px;
+			position: relative;
 
 
 
@@ -115,22 +117,22 @@
 
 [class*=swiper-button-prev-unique],
 [class*=swiper-button-next-unique] {
-		height: 25px;
-		width: 46px;
-		color: #ffff !important;
+	height: 25px;
+	width: 46px;
+	color: #ffff !important;
 
 
-		&:hover {
-			color: $secondary-color !important;
-		}
+	&:hover {
+		color: $secondary-color !important;
+	}
 
-		&.swiper-button-prev-unique {
-			left: 0;
-		}
+	&.swiper-button-prev-unique {
+		left: 0;
+	}
 
-		&.swiper-button-next-unique {
-			right: 0;
-		}
+	&.swiper-button-next-unique {
+		right: 0;
+	}
 
 }
 
@@ -151,6 +153,3 @@
 	justify-content: space-between;
 
 }
-
-
-
