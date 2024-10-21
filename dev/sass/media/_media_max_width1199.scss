@@ -1,12 +1,12 @@
 @media screen and (max-width: 1210px) {
-	.swiper-template{
+  .swiper-template {
     max-width: 720px;
 
 
-		+ .swiper-navigation {
-			max-width: 942px;
-		}
-	}
+    +.swiper-navigation {
+      max-width: 942px;
+    }
+  }
 
 }
 
@@ -15,8 +15,10 @@
   .navbar-custom {
     .nav-item {
       .nav-link {
-        padding:  12px 17px !important;
+        padding: 12px 17px !important;
       }
     }
-  } 
+  }
 }
+
+@media screen and (max-width: 1140.99px) {}

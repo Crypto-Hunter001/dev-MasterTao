@@ -11,6 +11,7 @@
 
   .navbar-custom {
     padding: 13px 0 24px !important;
+
     .nav-item {
       .nav-link {
         font-size: 24px !important;
@@ -29,6 +30,7 @@
       margin: 0 -20px !important;
       transform: translate(0, 20px) !important;
       box-shadow: 14px 22px 40px #1e234266 !important;
+
       .btn-primary {
         margin-bottom: 60px !important;
         font-size: 16px !important;
@@ -45,16 +47,17 @@
 
   .banner {
     padding-bottom: 0;
+
     .swiper {
 
       .container {
-      align-items: center !important;
-      text-align: center !important;
-      min-height: 649px !important;
-      position: relative;
+        align-items: center !important;
+        text-align: center !important;
+        min-height: 649px !important;
+        position: relative;
 
 
-    }
+      }
     }
 
 
@@ -65,13 +68,13 @@
     }
 
     &-description {
-       font-size: 16px !important;
+      font-size: 16px !important;
       margin-bottom: 18px !important;
       max-width: 260px;
     }
 
     .swiper-slide {
-         &::before {
+      &::before {
         content: "";
         background-color: #04091199;
         position: absolute;
@@ -84,17 +87,18 @@
   }
 
   section {
-	  padding: $section-padding-mobile;
+    padding: $section-padding-mobile;
 
 
-	  &.bg-section {
-		  padding-left: 0;
-		  padding-right: 0;
-		  &:before {
-			  width: 100%;
-			  border-radius: 0;
-		  }
-	  }
+    &.bg-section {
+      padding-left: 0;
+      padding-right: 0;
+
+      &:before {
+        width: 100%;
+        border-radius: 0;
+      }
+    }
 
   }
 
@@ -121,7 +125,7 @@
 
     input {
       &[type=file] {
-        + label {
+        +label {
           margin-top: 32px !important;
         }
       }
@@ -129,6 +133,7 @@
 
     .btn-lg {
       width: 100%;
+
       img {
         margin-left: 74px;
       }
@@ -156,6 +161,7 @@
 
   .calculation {
     padding: 54px 0 60px !important;
+
     .calculation-row {
       padding-top: 21px;
     }
@@ -166,11 +172,52 @@
       padding-top: 16px;
       overflow: none;
 
-      .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-      bottom: -8px;
+      .swiper-horizontal>.swiper-pagination-bullets,
+      .swiper-pagination-bullets.swiper-pagination-horizontal,
+      .swiper-pagination-custom,
+      .swiper-pagination-fraction {
+        bottom: -8px;
       }
     }
   }
+
+
+
+  .description {
+
+    .container {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;
+
+    }
+
+    .description-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+
+      .template-title {
+        margin-top: 0 !important;
+      }
+
+      .description-explanation {
+        margin: 0;
+      }
+
+
+    }
+  }
+
+  .image-row {
+    margin-top: 9px;
+  }
+
+
+
 
 
 
