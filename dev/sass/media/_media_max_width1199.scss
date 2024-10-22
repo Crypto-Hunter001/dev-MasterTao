@@ -22,4 +22,25 @@
 
 }
 
-@media screen and (max-width: 1140.99px) {}
+@media screen and (max-width: 1140.99px) {
+  .cooperation {
+    .cooperation-row {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;
+
+      .cooperation-image {
+        &--1 {
+          margin-left: 0 !important;
+          margin-bottom: 43px;
+        }
+
+        &--2 {
+          margin-right: 0 !important;
+          margin-bottom: 29px;
+        }
+      }
+    }
+  }
+}
