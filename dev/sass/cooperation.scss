@@ -1,0 +1,66 @@
+.cooperation {
+  background: $bg-section;
+
+  .template-title {
+    h4 {
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+
+  .cooperation-content {
+
+    .cooperation-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 47px;
+      padding-left: 12px;
+      padding-right: 12px;
+
+      .cooperation-description {
+        max-width: 528px;
+        width: 100%;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 150%;
+
+        &--2 {
+          max-width: 523px;
+        }
+
+
+        ul {
+
+          li {
+            list-style-type: disc;
+            margin-bottom: 41px;
+
+
+            &::before {
+              display: none;
+            }
+
+          }
+        }
+      }
+
+      .cooperation-image {
+
+        img {
+          max-width: 555px;
+          width: 100%;
+        }
+
+        &--1 {
+          margin-left: 56px;
+        }
+
+        &--2 {
+          margin-right: 45px;
+        }
+      }
+
+    }
+  }
+}
