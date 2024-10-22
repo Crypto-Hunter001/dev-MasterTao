@@ -243,4 +243,21 @@
 
   }
 
+  .questions {
+
+    .btn-lg {
+      width: 100%;
+      padding: 13px !important;
+    }
+
+    .questions-row {
+      display: flex;
+      flex-direction: column;
+
+      .accordion {
+        margin-right: 0 !important;
+      }
+    }
+  }
+
 }

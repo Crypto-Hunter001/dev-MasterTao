@@ -1,95 +1,164 @@
-.qustions {
+.questions {
   font-family: "ProximaNova";
   background: $bg-body;
 
+  .questions-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-
-}
-
-.questions-row {
-  display: flex;
-
-  .questions-form {
-    background-color: $form-bg;
-    max-width: 390px;
-    width: 100%;
-    border-radius: 20px;
-    color: #fff !important;
-    padding: 39px 40px;
-    box-shadow: 5px 15px 40px #363a4d52;
-
-    .form-column {
-
-      flex-direction: column;
-      display: flex;
+    .accordion {
       width: 100%;
+      margin-right: 34px;
 
-      .qustions-form-title {
+
+
+      .accordion-item {
+        border: none;
+        background-color: $bg-body;
+
+        &:focus-visible {
+          border: none;
+          outline: none;
+        }
+      }
+
+      .accordion-button {
+        background-color: $bg-body;
+        color: #fff;
+        border-radius: 10px !important;
+        border: 1px solid $accordion-button !important;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 124%;
+        margin-bottom: 16px;
+
+        &:focus {
+          box-shadow: none;
+        }
+
+        &::after {
+          background-image: url(assets/Img/accordion.png);
+          width: 27px;
+          height: 27px;
+          background-size: 27px;
+          transition: .4s;
+        }
+
+        &:not(.collapsed) {
+          &::after {
+            transition: .4s;
+            transform: none;
+            background-image: url(assets/Img/accordion-primary.png);
+
+          }
+        }
+
+      }
+
+      .accordion-body {
+        background-color: #fff;
+        border-radius: 10px;
+
         h3 {
-          font-size: 24px;
-          line-height: 126%;
+          font-size: 18px;
           font-weight: 600;
-          margin-bottom: 8px;
+          color: $accordion-body-title;
         }
-      }
 
-      .questions-form-desctiprion {
         h4 {
-          line-height: 126%;
           font-size: 17px;
-          font-weight: 300;
-          margin-bottom: 23px;
+          font-weight: 400;
+          line-height: 144%;
+          color: $accordion-body-title;
         }
-      }
 
 
-      .input-box {
-        margin-bottom: 14px;
-
-        input {
-          width: 100%;
-          padding: 17px 12px;
-          border-radius: 10px;
-          border: 2px solid transparent;
-          font-size: 15px;
-
-          &::placeholder {
-            color: $input-placeholeder;
-            font-size: 15px;
-            font-weight: 400;
-          }
-
-          &:focus-visible {
-            outline: none;
-          }
-
-          &:hover {
-            border: 2px solid $primary-color;
-            transition: 0.3s;
-          }
-
-          &:focus {
-            border: 2px solid $secondary-color;
-            transition: 0.3s;
-          }
-
-        }
       }
     }
 
-    .form-button {
-      button {
+    .questions-form {
+      background-color: $form-bg;
+      max-width: 390px;
+      width: 100%;
+      border-radius: 20px;
+      color: #fff !important;
+      padding: 39px 40px;
+      box-shadow: 5px 15px 40px #363a4d52;
+
+      .form-column {
+
+        flex-direction: column;
+        display: flex;
         width: 100%;
-      }
 
-      .btn-primary {
-        img {
-          margin-left: 95px;
+        .qustions-form-title {
+          h3 {
+            font-size: 24px;
+            line-height: 126%;
+            font-weight: 600;
+            margin-bottom: 8px;
+          }
+        }
+
+        .questions-form-desctiprion {
+          h4 {
+            line-height: 126%;
+            font-size: 17px;
+            font-weight: 300;
+            margin-bottom: 23px;
+          }
+        }
+
+
+        .input-box {
+          margin-bottom: 14px;
+
+          input {
+            width: 100%;
+            padding: 17px 12px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            font-size: 15px;
+
+            &::placeholder {
+              color: $input-placeholeder;
+              font-size: 15px;
+              font-weight: 400;
+            }
+
+            &:focus-visible {
+              outline: none;
+            }
+
+            &:hover {
+              border: 2px solid $primary-color;
+              transition: 0.3s;
+            }
+
+            &:focus {
+              border: 2px solid $secondary-color;
+              transition: 0.3s;
+            }
+
+          }
         }
       }
+
+      .form-button {
+        button {
+          width: 100%;
+        }
+
+        .btn-primary {
+          img {
+            margin-left: 95px;
+          }
+        }
+      }
+
+
+
     }
-
-
-
   }
 }
