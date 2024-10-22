@@ -1,6 +1,103 @@
-footer{
-    height: 356px;
-    background-color: $bg-body;
-    margin-top: auto;
+footer {
+
+    .container {
+        border-top: 2px solid $primary-color;
+        min-height: 318px;
+
+        .footer-content {
+            display: flex;
+
+            .footer-column {
+                display: flex;
+                flex-direction: column;
+                margin-top: 40px;
+                max-width: 263px;
+                width: 100%;
+
+
+                .footer-img {
+                    margin-bottom: 28px;
+                }
+
+                .footer-address {
+
+                    address {
+                        margin: 0;
+
+                        p,
+                        a {
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 162%;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                .footer-icons {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 8px;
+
+
+
+                    .icons-item {
+                        max-width: 34px;
+                        height: 33px;
+                        border-radius: 50%;
+
+                        &:hover {
+                            transform: scale(1.2);
+                            transition: .3s;
+                        }
+                    }
+
+                }
+
+
+            }
+
+            .footer-row {
+                margin-top: 34px;
+                margin-left: auto;
+                margin-right: auto;
+
+                .nav-template {
+                    display: flex;
+                    gap: 97px;
+
+                    .nav-items {
+                        .nav-list {
+                            font-size: 16px;
+                            line-height: 160%;
+                            font-weight: 400;
+
+                            .nav-title {
+                                font-size: 20px;
+                                font-weight: 600;
+                                margin-bottom: 14px;
+                                text-transform: capitalize;
+                            }
+
+                            .nav-item {
+                                text-transform: capitalize;
+                                margin-bottom: 10px;
+
+                                a {
+                                    color: $color-secondary;
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
 
 }

@@ -217,4 +217,30 @@
   }
 
 
+  .footer {
+
+    .footer-content {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+
+      .footer-row {
+        display: none;
+
+      }
+
+      .footer-icons {
+        display: flex;
+        justify-content: center;
+
+      }
+
+
+
+
+    }
+
+
+  }
+
 }
