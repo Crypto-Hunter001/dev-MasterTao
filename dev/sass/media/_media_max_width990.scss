@@ -30,6 +30,7 @@
       margin: 0 -20px !important;
       transform: translate(0, 20px) !important;
       box-shadow: 14px 22px 40px #1e234266 !important;
+      z-index: 2;
 
       .btn-primary {
         margin-bottom: 60px !important;
@@ -47,6 +48,7 @@
 
   .banner {
     padding-bottom: 0;
+
 
     .swiper {
 

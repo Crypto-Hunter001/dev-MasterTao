@@ -1,11 +1,12 @@
-header{
-	height: 114px !important;
-	padding: 15px 12px !important ;
-	background: $bg-body !important;
+header {
+  height: 114px !important;
+  padding: 15px 12px !important;
+  background: $bg-body !important;
   font-family: "ProximaNova";
-	a {
-		color: #fff !important;
-	}
+
+  a {
+    color: #fff !important;
+  }
 
 
 }
@@ -21,13 +22,15 @@ header{
   border-radius: 0 !important;
   padding: 0 !important;
   box-shadow: none !important;
+
   .navbar-toggler-icon {
     background-image: none !important;
     background: #fff;
     height: 2px !important;
     position: relative;
+
     &:before,
-    &::after{
+    &::after {
       content: "";
       position: absolute;
       left: 0;
@@ -37,22 +40,26 @@ header{
       background: #fff;
       transition: .3s !important;
     }
+
     &::after {
       top: 18px !important;
     }
   }
 }
+
 [aria-expanded="true"] {
-   .navbar-toggler-icon {
+  .navbar-toggler-icon {
     background-color: transparent !important;
+
     &::before {
       transform: rotate(45deg) !important;
     }
+
     &::after {
-      transform:  rotate(-45deg) !important;
+      transform: rotate(-45deg) !important;
       top: 9px !important;
     }
-   }
+  }
 }
 
 .navbar-nav {
@@ -62,20 +69,23 @@ header{
 
 
 .navbar-custom {
-	 padding: 5px 0px 6px !important;
+  padding: 5px 0px 6px !important;
 
 }
+
 .navbar-custom {
-	.nav-item {
-		.nav-link {
-			   padding: 12px 21px !important;
-			&:hover {
-				text-decoration: none;
-				color: $primary-color  !important;
-			}
-		}
-	}
+  .nav-item {
+    .nav-link {
+      padding: 12px 21px !important;
+
+      &:hover {
+        text-decoration: none;
+        color: $primary-color !important;
+      }
+    }
+  }
 }
+
 .navbar-brand {
-	 margin: 0 !important;
+  margin: 0 !important;
 }

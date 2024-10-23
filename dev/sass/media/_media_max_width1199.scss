@@ -12,14 +12,9 @@
 
 
 @media screen and (max-width: 1199.99px) {
-  .navbar-custom {
-    .nav-item {
-      .nav-link {
-        padding: 12px 17px !important;
-      }
-    }
+  .navbar-custom .nav-item .nav-link {
+    padding: 12px 15px !important;
   }
-
 }
 
 @media screen and (max-width: 1140.99px) {

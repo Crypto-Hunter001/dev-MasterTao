@@ -5,6 +5,10 @@
 	.template-title {
 		color: #fff;
 		padding-bottom: 51px;
+
+		&::before {
+			background-color: $primary-color;
+		}
 	}
 
 
